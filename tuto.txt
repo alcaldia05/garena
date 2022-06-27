@@ -15,9 +15,7 @@ Ejemplo: /acc luisi,1234
 /host ➳ Comando para establecer el Host del moodle o la nube.
 Ejemplo:
 /host https://eduvirtual.uho.edu.cu/
- ━━━━━━━━━༺༻━━━━━━━━━━
-/token ➳ Comando para mostrar el token de la cuenta moodle actual.
- ━━━━━━━━━༺༻━━━━━━━━━━
+ ━━━━━━━━━༺༻━━━━━━━━━━
 /zips ➳ Comando para establecer el tamaño maximo por archivos.
 Este comando sirve cuando su nube por ejemplo es de 50 mb por archivo y usted quiere subir algo de 200 MiB pues el Bot parte el archivo en partes de 50 MiB y las sube.
 Se usa pasando un número detrás del comando
@@ -62,16 +60,7 @@ Ejemplo:
 Se usa pasando el proxy claramente encriptado detrás del comando.
 Ejemplo:
 /proxy soket587d89as891723821jhkasd
- ━━━━━━━━━༺༻━━━━━━━━━━
-/off_proxy ➳ Comando para deseuipar el proxy actual del bot.
- ━━━━━━━━━༺༻━━━━━━━━━━
-/view_proxy ➳ Comando para ver el proxy establecido actualmente.
- ━━━━━━━━━༺༻━━━━━━━━━━
-/encript_on ➳ Configurar para activar encriptado no disponible en los enlaces de descarga.
- ━━━━━━━━━༺༻━━━━━━━━━━
-/encript_off ➳ Configurar para desactivar encriptado.
- ━━━━━━━━━༺༻━━━━━━━━━━
-/help ➳ Comando para mostrar la ayuda disponible del Bot.
+ ━━━━━━━━━༺༻━━━━━━━━━━
 
 ⊰᯽⊱┈───────╌❊╌──────┈⊰᯽⊱
  Para extraer los enlaces de descarga directa de algún archivo de Telegram puede usar el bot @tg_file_link_bot o @Link4FilesBot, también para extraer enlaces de descarga de ciertos sitios de internet puede usar @DirectLinkGeneratorbot...
