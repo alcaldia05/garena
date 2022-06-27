@@ -408,7 +408,7 @@ def onmessage(update,bot:ObigramClient):
             información.close()
             return
         if '/commands' in msgText:
-            message = bot.sendMessage(update.message.chat.id,'🙂Para añadir estos comandos al menú de acceso rápido debe enviarle el comando /setcommands a @BotFather y luego seleccionar su bot, luego solo queda reenviarle el mensaje con los siguientes comandos y bualah😁.')
+            message = bot.sendMessage(update.message.chat.id,'🙄CONTACTE A @nautaii🙄.')
             comandos = open('comandos.txt','r')
             bot.sendMessage(update.message.chat.id,comandos.read())
             información.close()
@@ -643,11 +643,11 @@ def onmessage(update,bot:ObigramClient):
             start_msg = '   🌟𝔹𝕆𝕋 𝕀ℕ𝕀ℂ𝕀𝔸𝔻𝕆🌟\n'
             start_msg+= '࿇ ══━━━━✥◈✥━━━━══ ࿇\n'
             start_msg+= '🤖Hola @' + str(username)+'\n'
-            start_msg+= '☺️! Bienvenid@ al bot de descargas gratis SuperDownload en su versión inicial 1.0 PlusEdition🌟!\n'
+            start_msg+= '☺️! Bienvenid@ al bot de descargas gratis SuperDownload 🌟!\n'
             start_msg+= '🙂Si necesita ayuda o información utilice:\n'
             start_msg+= '/help\n'
             start_msg+= '/about\n'
-            start_msg+= '🙂Si usted desea añadir la barra de comandos al menú de acceso rápido de su bot envíe /commands.\n\n'
+            start_msg+= '🔥 FUEGO CON ETECSA 🔥\n\n'
             start_msg+= '😁𝚀𝚞𝚎 𝚍𝚒𝚜𝚏𝚛𝚞𝚝𝚎 𝚐𝚛𝚊𝚗𝚍𝚎𝚖𝚎𝚗𝚝𝚎 𝚜𝚞 𝚎𝚜𝚝𝚊𝚍𝚒𝚊😁.\n'
             bot.editMessageText(message,start_msg)
             message = bot.sendMessage(update.message.chat.id,'🦾')
@@ -805,6 +805,18 @@ def onmessage(update,bot:ObigramClient):
 def main():
     bot_token = os.environ.get('bot_token')
     
+
+    bot = ObigramClient(bot_token)
+    bot.onMessage(onmessage)
+    bot.run()
+    asyncio.run()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except:
+        main()
+ 
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
