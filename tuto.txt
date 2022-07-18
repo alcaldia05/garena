@@ -1,16 +1,15 @@
  ꧁TUTORIAL꧂
          
-        𝚂𝚞𝚙𝚎𝚛𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙱𝚘𝚝🌟
+        ✅BIEN EXPLICADO ✅
   ༺═───────────────═༻
 ◆ ▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬ ◆
-
-👉👈ETOO mira giate🤗
+
 /useradm ➳ Comando para saber si es admin o usuario del bot y su poder sobre el mismo.
  ━━━━━━━━━༺༻━━━━━━━━━━
 /myuser ➳ Comando para echarle un vistazo a la configuración actual.
 ━━━━━━━━━༺༻━━━━━━━━━━
 /acc ➳ Comando para configurar Usuario y Contraseña.
-Ejemplo: /acc luisi,1234
+Ejemplo: /acc pedro,1234
  ━━━━━━━━━༺༻━━━━━━━━━━
 /host ➳ Comando para establecer el Host del moodle o la nube.
 Ejemplo:
