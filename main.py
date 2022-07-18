@@ -372,7 +372,7 @@ def onmessage(update,bot:ObigramClient):
                 bot.editMessageText(sms1,sms2)
                 bot.sendFile(update.message.chat.id,'database.jdb')
             else:
-                bot.sendMessage(update.message.chat.id,'⚠️No posee permisos de administrador⚠️')
+                bot.sendMessage(update.message.chat.id,'⚠️ Comando inexistente⚠️')
             return
         if '/leerdb' in msgText:
             isadmin = jdb.is_admin(username)
@@ -381,7 +381,7 @@ def onmessage(update,bot:ObigramClient):
                 bot.sendMessage(update.message.chat.id,database.read())
                 database.close()
             else:
-                bot.sendMessage(update.message.chat.id,'⚠️No posee permisos de administrador⚠️')
+                bot.sendMessage(update.message.chat.id,'⚠️ Comando inexistente⚠️')
             return
         if '/useradm' in msgText:
             isadmin = jdb.is_admin(username)
@@ -408,7 +408,7 @@ def onmessage(update,bot:ObigramClient):
             información.close()
             return
         if '/commands' in msgText:
-            message = bot.sendMessage(update.message.chat.id,'🙄CONTACTE A @nautaii🙄.')
+            message = bot.sendMessage(update.message.chat.id,'🙄Ya puestos🙄.')
             comandos = open('comandos.txt','r')
             bot.sendMessage(update.message.chat.id,comandos.read())
             información.close()
@@ -640,15 +640,15 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '   🌟𝔹𝕆𝕋 𝕀ℕ𝕀ℂ𝕀𝔸𝔻𝕆🌟\n'
+            start_msg = '   🌟SECION INICIADA🌟\n'
             start_msg+= '࿇ ══━━━━✥◈✥━━━━══ ࿇\n'
             start_msg+= '🤖Hola @' + str(username)+'\n'
-            start_msg+= '☺️! Bienvenid@ al bot de descargas gratis SuperDownload 🌟!\n'
+            start_msg+= '☺️! Bienvenid@ al bot de descargas gratis .!Asi como lo oyes¡🌟!\n'
             start_msg+= '🙂Si necesita ayuda o información utilice:\n'
             start_msg+= '/help\n'
             start_msg+= '/about\n'
-            start_msg+= '🔥 FUEGO CON ETECSA 🔥\n\n'
-            start_msg+= '😁𝚀𝚞𝚎 𝚍𝚒𝚜𝚏𝚛𝚞𝚝𝚎 𝚐𝚛𝚊𝚗𝚍𝚎𝚖𝚎𝚗𝚝𝚎 𝚜𝚞 𝚎𝚜𝚝𝚊𝚍𝚒𝚊😁.\n'
+            start_msg+= '✅NO GASTES MAS DE TU INTERNET✅\n\n'
+            start_msg+= '🌞DEVE REPROGRAMAR CADA 24 HORAS🌞.\n'
             bot.editMessageText(message,start_msg)
             message = bot.sendMessage(update.message.chat.id,'🦾')
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -705,8 +705,8 @@ def onmessage(update,bot:ObigramClient):
                  client.logout()
                  bot.editMessageText(message,'𝚃𝚇𝚃 𝙰𝚚𝚞𝚒👇')
              else:
-                bot.editMessageText(message,'🧐')
-                message = bot.sendMessage(update.message.chat.id,'⚠️Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
+                bot.editMessageText(message,'😐')
+                message = bot.sendMessage(update.message.chat.id,'💢Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
              pass
         elif '/token' in msgText:
             message2 = bot.editMessageText(message,'🤖Obteniendo Token, por favor espere🙂...')
@@ -740,10 +740,10 @@ def onmessage(update,bot:ObigramClient):
                 evfile = client.getEvidences()[findex]
                 client.deleteEvidence(evfile)
                 client.logout()
-                bot.editMessageText(message,'𝙰𝚛𝚌𝚑𝚒𝚟𝚘 𝚎𝚕𝚒𝚖𝚒𝚗𝚊𝚍𝚘🗑️')
+                bot.editMessageText(message,'🔴ELIMINACION EXITOSA🔴')
             else:
-                bot.editMessageText(message,'🧐')
-                message = bot.sendMessage(update.message.chat.id,'⚠️Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
+                bot.editMessageText(message,'😐')
+                message = bot.sendMessage(update.message.chat.id,'💢Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
         elif '/del_' in msgText and user_info['cloudtype']=='moodle':
             findex = int(str(msgText).split('_')[1])
             proxy = ProxyCloud.parse(user_info['proxy'])
@@ -757,10 +757,10 @@ def onmessage(update,bot:ObigramClient):
                 evfile = client.getEvidences()[findex]
                 client.deleteEvidence(evfile)
                 client.logout()
-                bot.editMessageText(message,'𝙰𝚛𝚌𝚑𝚒𝚟𝚘 𝚎𝚕𝚒𝚖𝚒𝚗𝚊𝚍𝚘🗑️')
+                bot.editMessageText(message,'🔴ELIMINACION EXITOSA🔴')
             else:
-                bot.editMessageText(message,'🧐')
-                message = bot.sendMessage(update.message.chat.id,'⚠️Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
+                bot.editMessageText(message,'😐')
+                message = bot.sendMessage(update.message.chat.id,'💢Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
         elif '/delall' in msgText and user_info['cloudtype']=='moodle':
             proxy = ProxyCloud.parse(user_info['proxy'])
             client = MoodleClient(user_info['moodle_user'],
@@ -774,7 +774,7 @@ def onmessage(update,bot:ObigramClient):
                 for item in evfiles:
                 	client.deleteEvidence(item)
                 client.logout()
-                bot.editMessageText(message,'𝙰𝚛𝚌𝚑𝚒𝚟𝚘𝚜 𝚎𝚕𝚒𝚖𝚒𝚗𝚊𝚍𝚘𝚜🗑️')
+                bot.editMessageText(message,'🔴ELIMINACION EXITOSA🔴')
             else:
                 bot.editMessageText(message,'🧐')
                 message = bot.sendMessage(update.message.chat.id,'⚠️Error y posibles causas:\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
@@ -797,7 +797,7 @@ def onmessage(update,bot:ObigramClient):
             #    import asyncio
             #    asyncio.run(tlmedia.download_media(api_id,api_hash,bot_token,chat_id,message_id))
             #    return
-            bot.editMessageText(message,'⚠️𝙴𝚛𝚛𝚘𝚛, 𝚗𝚘 𝚜𝚎 𝚙𝚞𝚍𝚘 𝚊𝚗𝚊𝚕𝚒𝚣𝚊𝚛 𝚌𝚘𝚛𝚛𝚎𝚌𝚝𝚊𝚖𝚎𝚗𝚝𝚎⚠️')
+            bot.editMessageText(message,'💢ERROR💢')
     except Exception as ex:
            print(str(ex))
   

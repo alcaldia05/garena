@@ -1,11 +1,9 @@
-﻿help - 🆘Ayuda sobre el bot
-useradm - 🌟Ver si eres admin o usuario del bot
+﻿help - 🆘Ayuda sobre el bot
 myuser - ⚙️Configuración actual
 acc - 🧾Credenciales (usuario,contraseña)
 host - ☁️Url de la nube
 zips - 🗜️Tamaño de zips
-repo - 🆔Repo ID
-del_all - 🗑️Eliminar todos los archivos
+repo - 🆔Repo ID
 cloud - 🔑🗝️Tipo de nube (moodle o cloud)
 dir - 📂Carpeta destino de la cloud
 uptype - ⛈️Tipo de subida a moodles (evidence, draft, blog, calendar)
