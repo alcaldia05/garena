@@ -650,7 +650,7 @@ def onmessage(update,bot:ObigramClient):
             start_msg+= '✅NO GASTES MAS DE TU INTERNET✅\n\n'
             start_msg+= '🌞DEVE REPROGRAMAR CADA 24 HORAS🌞.\n'
             bot.editMessageText(message,start_msg)
-            message = bot.sendMessage(update.message.chat.id,'🦾')
+            message = bot.sendMessage(update.message.chat.id,'😸')
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
              proxy = ProxyCloud.parse(user_info['proxy'])
              client = MoodleClient(user_info['moodle_user'],
